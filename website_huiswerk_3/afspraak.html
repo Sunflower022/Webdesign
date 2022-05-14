@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Huiswerkopgave les 7</title>
+  </head>
+  <body>
+    <form id="afspraakform" action="https://formspree.io/f/mgedzwnd" method="post">
+      <h1>Tandartsafspraak</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel varius sapien.
+         Pellentesque non quam nec nunc rutrum venenatis. Fusce a ultricies eros.
+         Mauris id erat quis est tincidunt convallis. Nullam at tempor tortor, in condimentum magna.
+         Donec nec ex ac elit luctus pharetra. Nunc maximus tortor vel velit rhoncus gravida.
+         Suspendisse feugiat quam non ornare pulvinar. Morbi nisi diam, ornare eu feugiat vitae, volutpat rhoncus libero.
+         Nam eget nibh vel odio vehicula consectetur at a justo. Cras sodales nulla nec urna pharetra egestas.
+         Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin vel ex nunc.
+         Fusce sodales suscipit nibh non tempor. Donec tristique, erat vitae tempor imperdiet, tellus odio volutpat orci,
+         a pulvinar turpis ipsum sodales diam.</p>
+      <br>
+      <img src="afbeeldingen/tandartscontrole.jpg" alt="Tandartscontrole" title="Tandartscontrole © m.standaard.be" width="300" height="200">
+      <img src="afbeeldingen/tandartsstoel.jpg" alt="Tandartsstoel" title="Tandartsstoel © pixabay.com" width="300" height="200">
+      <img src="afbeeldingen/glimlach.jpg" alt="Glimlach" title="Glimlach © pixabay.com" width="300" height="200">
+      <br>
+      <br>
+      <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        <table width="450" border="0">
+          <tbody>
+            <tr>
+              <td width="150"><label for="voornaam">Voornaam</label></td>
+              <td width="300"><input type="text" name="voornaam" id="voornaam"></td>
+            </tr>
+            <tr>
+              <td><label for="familienaam">Familienaam</label></td>
+              <td><input type="text" name="familienaam" id="familienaam"></td>
+            </tr>
+            <tr>
+              <td><label for="straat">Straat + huisnummer</label></td>
+              <td><input type="text" name="straat" id="straat"></td>
+            </tr>
+            <tr>
+              <td><label for="postcode">Postcode</label></td>
+              <td><input type="number" name="postcode" id="postcode"></td>
+            </tr>
+            <tr>
+              <td><label for="gemeente">Gemeente</label></td>
+              <td><input type="text" name="gemeente" id="gemeente"></td>
+            </tr>
+            <tr>
+              <td><label for="telefoon">Telefoonnr.</label></td>
+              <td><input type="tel" name="telefoon" id="telefoon"></td>
+            </tr>
+            <tr>
+              <td><label for="email">E-mailadres</label></td>
+              <td><input type="email" name="email" id="email"></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Beschrijving van de klachten</legend>
+        <table width="450" border="0">
+          <tbody>
+            <tr>
+              <td width="150"><label for="klachten">Duid je klachten aan</label></td>
+              <td width="300"><input type="checkbox" name="klachten" id="klachten" value="tand_zit_los">Tand zit los</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" name="klachten" value="stukje_tand_afgebroken">Stukje tand afgebroken</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" name="klachten" value="vulling_zit_los">Vulling zit los</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" name="klachten" value="vulling_ontbreekt">Vulling ontbreekt</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" name="klachten" value="probleem_met_prothese">Probleem met prothese</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" name="klachten" value="andere">Andere</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <label for="foto">Voeg een foto toe</label> <br>
+        <input type="file" name="foto" id="foto" accept="image/jpeg,image/jpeg,image/gif" multiple>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Omschrijving van de klachten</legend>
+        <label for="omschrijving">Omschrijving</label> <br>
+        <textarea name="omschrijving" id="omschrijving" maxlength="1500" rows="10" cols="42"> </textarea> <br>
+        <br>
+        <label for="datum">Datum afspraak </label>
+        <input type="date" name="datum" min="2022-03-14" id="datum">
+      </fieldset>
+      <br>
+      <button type="submit" name="verzenden"><strong>Verzenden</strong></button>
+    </form>
+  </body>
+</html>
